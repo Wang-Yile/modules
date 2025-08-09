@@ -57,7 +57,7 @@ tcs = [
     (int(1e8), -int(1e18), int(1e18)),
 ]
 
-md = "| 数量 | 值域 | 输入量 | cin/cout | FastIO | 提速 |\n| :- | :- | :- | :- | :- | :- |\n"
+md = "| 数量 | 值域 | 输入量 | FastIO | cin/cout | 提速 |\n| :- | :- | :- | :- | :- | :- |\n"
 
 for tc in tcs:
     n, l, r = tc
@@ -70,6 +70,6 @@ for tc in tcs:
     if os.system("diff 1.out 2.out -w -q"):
         print("Wrong Answer")
         break
-    md += f"| ${tr(n)}$ | $[{tr(l)}, {tr(r)}]$ | {tr_mem(os.stat('1.in').st_size)} | {int(x*1000)}ms | {int(y*1000)} | ${(y-x)/y*100:.2f}\\%$ |\n"
+    md += f"| ${tr(n)}$ | $[{tr(l)}, {tr(r)}]$ | {tr_mem(os.stat('1.in').st_size)} | {int(x*1000)}ms | {int(y*1000)}ms | ${(y-x)/y*100:.2f}\\%$ |\n"
 
 print(md)
