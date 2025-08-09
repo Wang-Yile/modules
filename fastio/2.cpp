@@ -13,7 +13,6 @@ static inline void write(__int128 x){
 }
 
 int n;
-long long a[100000005];
 
 signed main(){
     ios::sync_with_stdio(false);
@@ -22,14 +21,13 @@ signed main(){
     cin>>n;
     __int128 sum=0;
     for(int i=1;i<=n;++i){
-        cin>>a[i];
-        sum+=a[i];
+        long long x;
+        cin>>x;
+        sum+=x;
+        cout<<x<<' ';
     }
-    write(sum);
     cout<<'\n';
-    cout<<n<<'\n';
-    for(int i=1;i<=n;++i)
-        cout<<a[i]<<' ';
+    write(sum);
     cout<<'\n';
     return 0;
 }
