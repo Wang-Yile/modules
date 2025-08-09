@@ -1,6 +1,6 @@
 > version 2025-08-09  
 > © 2025 [bluewindde](https://www.luogu.com.cn/user/857577)  
-> 本文采用 [CC BY-SA 4.0 协议](https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans) 发布
+> 采用 [CC BY-SA 4.0 协议](https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans) 发布
 
 ## 使用说明
 
@@ -21,9 +21,11 @@ using namespace std;
 
 本模板库全局修改了如下行为：
 
-- is_integral 为 __int128 特化。
+- 特化 is_integral 使其支持 __int128 和 unsigned __int128。
 
 ## FastIO
+
+[fastio.h](./fastio/fastio.h)
 
 支持读写字符和非负整数。接口是 cin/cout 的一部分和 fin/fout 的混合体。
 
@@ -46,8 +48,6 @@ version 2025-08-09 与解绑同步流的 cin/cout 在相同运行条件（C++ 14
 | $10^6$ | 18.5MiB | 78ms | 174ms | 51.70% |
 | $10^7$ | 185MiB | 1211ms | 2216ms | 45.32% |
 | $10^8$ | 1.8GiB | 7462ms | 18596ms | 59.87% |
-
-[fastio.h](./fastio/fastio.h)
 
 ## 测试
 
