@@ -71,7 +71,6 @@ class ostream{
             put(c);
         return *this;
     }
-    // 请注意输出 INT32_MIN 一类数字会出现乱码
     template<typename T>
     inline typename enable_if<is_integral<T>::value,ostream&>::type operator<<(T x){
         if(x==0)
