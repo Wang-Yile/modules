@@ -1,4 +1,4 @@
-> version 2025-08-09  
+> version 2025-08-12  
 > © 2025 [bluewindde](https://www.luogu.com.cn/user/857577)  
 > 采用 [CC BY-SA 4.0 协议](https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans) 发布
 
@@ -25,7 +25,7 @@ using namespace std;
 
 ## FastIO
 
-[fastio.h](./fastio/fastio.h)
+[fastio.h](./fastio.h)
 
 支持读写字符和非负整数。接口是 cin/cout 的一部分和 fin/fout 的混合体。
 
@@ -48,6 +48,14 @@ version 2025-08-09 与解绑同步流的 cin/cout 在相同运行条件（C++ 14
 | $10^6$ | 18.5MiB | 78ms | 174ms | 51.70% |
 | $10^7$ | 185MiB | 1211ms | 2216ms | 45.32% |
 | $10^8$ | 1.8GiB | 7462ms | 18596ms | 59.87% |
+
+## Matrix
+
+[matrix.h](./matrix.h)
+
+支持矩阵乘法和矩阵快速幂。为适应竞赛需要，默认带有取模。
+
+矩阵大小是字面量，需要使用时可以手动修改。
 
 ## 测试
 
