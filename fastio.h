@@ -24,6 +24,7 @@ class istream{
         if(st==ed)_flush();
         return st==ed?EOF:*st++;
     }
+    inline istream& operator>>(char &x){x=get();return *this;}
     template<typename T>
     inline typename enable_if<is_integral<T>::value,istream&>::type operator>>(T &x){
         x=0;

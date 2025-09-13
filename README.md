@@ -1,5 +1,4 @@
-> version 2025-08-12  
-> © 2025 [bluewindde](https://www.luogu.com.cn/user/857577)  
+> © 2025 [bluewindde](mailto:bluewindde@163.com)  
 > 采用 [CC BY-SA 4.0 协议](https://creativecommons.org/licenses/by-sa/4.0/deed.zh-hans) 发布
 
 ## 使用说明
